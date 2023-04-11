@@ -8,16 +8,18 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Home'),
-        backgroundColor: Colors.amber,
+        backgroundColor: Colors.amberAccent,
         shadowColor: Colors.white,
       ),
-      body: Container(
-        margin: EdgeInsets.all(20),
-        width: 400,
-        height: 200,
-        decoration: BoxDecoration(
-            color: Color.fromARGB(255, 255, 193, 7),
-            borderRadius: BorderRadius.circular(10)),
+      body: Center(
+        child: Container(
+          width: 400,
+          height: 200,
+          decoration: BoxDecoration(
+              border: Border.all(color: Colors.amber),
+              color: Colors.amberAccent,
+              borderRadius: BorderRadius.circular(10)),
+        ),
       ),
     );
   }
